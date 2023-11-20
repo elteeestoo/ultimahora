@@ -5,15 +5,17 @@
 
 header{
     display: flex;
-    height: 10vh;
     background-color: #ff0000;
     width: 100vw;
     justify-content: center;
+    padding: 2rem;
 }
 
 .menu{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 1,5 rem 0;
+    
 
     
 }
