@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+body{
+    height:100vh;
+    width:99vw;
+    font-family: 'roboto', sans-serif;
+}
+
 button{
     background: transparent;
     border: none;
@@ -20,51 +26,105 @@ ul{
 header{
     margin: 0 auto;
     align-items: center;
-    background-color: #ff0000;
-   
-    padding: 1,5rem 0 ;
+    background-color: hsl(0, 100%, 40%);
+    height:20%;
+    display: flex;
+    width: 100vw;
 }
+
+.top-bar{
+    display: flex;
+    background-color: hsl(0, 0%, 90%);
+    width: 100%;
+    white-space: nowrap;
+    
+}
+
+.top-bar-highlight{
+    width: 50%;
+    fill: black
+    
+}
+
 .menu{
     display: flex;
     justify-content: space-between;
     width: 100%;
-
+    align-items: center;
+    padding: 16%;
+    height: auto;
 
     
 }
 .menu-hamburger{
     display: flex;
-   justify-content: start;
+    justify-content: start;
+    width: 15%;
+    
+
 }
+
+.menu-hamburger button{
+    width: 1rem;
+}
+
 
 .menu-hamburger button svg{
-    width: 3rem;
+    fill: white;
+    width: 2rem;
 }
 
-
-.menu-hamburger button svg path{
-    fill: black;
-}
-
-.menu-title{
-    margin: 0 auto;
+.menu-title svg{
+    width: 100%;
     display: flex;
     justify-content: center;
+    fill: white;
 
+}
+
+.menu-access{
+    display: flex;
+    width: 20%;
+    gap:0.5rem;
 }
 
 .menu-login{
     display: flex;
-    justify-content: end;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    width:50%;
+    padding: 0rem 0.5rem;
+   
 }
 
-.menu-login button svg{
-    width: 0,5rem;
+.menu-login-button svg{
+    width: 15%;
     
 }
 
+.menu-login  button{
+    display: flex;
+    gap:0.3rem;
+    justify-content: center;
+    
+}
+
+.menu-login span{
+    white-space: nowrap;
+}
+
 .menu-signup{
+   display: flex;
+   align-items: center;
+   background-color: yellow;
+   padding: 0.6rem;
+   border-radius: 5px;
+   width:30%;
+   justify-content: center;
    
+  
 }
 
 .navigator{
@@ -97,7 +157,7 @@ main{
 
 .block{
     display: flex;
-    width: 60%;
+    width: 50%;
     justify-content: center;
     
 }
