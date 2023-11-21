@@ -23,27 +23,61 @@ ul{
     list-style: none;
 }
 
-header{
-    margin: 0 auto;
-    align-items: center;
-    background-color: hsl(0, 100%, 40%);
-    height:20%;
-    display: flex;
-    width: 100vw;
-}
 
 .top-bar{
     display: flex;
     background-color: hsl(0, 0%, 90%);
-    width: 100%;
-    white-space: nowrap;
+    width: 100vw;
+
     
 }
 
+.top-bar-things{
+    display: flex;
+    width: 100%;
+   
+}
+
 .top-bar-highlight{
+    display: flex;
+    
+    padding: 0.2rem;
     width: 50%;
     fill: black
     
+    
+}
+
+.top-bar-highlight ul{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.top-bar-highlight ul li:first-child{
+    font-weight: 400;
+    fill: red;
+
+}
+
+.top-bar-sort{
+    display: flex;
+    
+    padding: 0.2rem;
+    width: 50%;
+    fill: black
+    
+    
+}
+
+header{
+    margin: 0 auto;
+    align-items: center;
+    background-color: hsl(0, 100%, 40%);
+    height:10%;
+    display: flex;
+    width: 100vw;
+
 }
 
 .menu{
