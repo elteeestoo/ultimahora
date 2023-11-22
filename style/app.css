@@ -23,85 +23,59 @@ ul{
     list-style: none;
 }
 
-
-.top-bar{
-    display: flex;
-    background-color: hsl(0, 0%, 90%);
-    width: 100vw;
-
-    
+header{
+  margin: 0 auto;
+  width: 100%;
 }
 
-.top-bar-things{
-    display: flex;
-    width: 100%;
-   
+.top-bar{
+  display: flex;
+  background-color: hsl(0, 0%, 90%);
+  padding: 0.3rem 10%;
+  width: 80%;
+  justify-content: space-between;
 }
 
 .top-bar-highlight{
-    display: flex;
-    
-    padding: 0.2rem;
-    width: 50%;
-    fill: black
-    
-    
+  display: flex;
 }
 
 .top-bar-highlight ul{
-    display: flex;
-    gap: 1rem;
-
+  display: flex;
+  gap: 0.4rem;
+  
 }
 
-.top-bar-highlight ul li:first-child{
-    font-weight: 400;
-    fill: red;
-
+.top-bar-highlight ul li:not(:first-child):not(:last-child)::after{
+  content:"-";
+  margin-left: 0.3rem;
 }
 
 .top-bar-sort{
-    display: flex;
-    
-    padding: 0.2rem;
-    width: 50%;
-    fill: black
-    
-    
+  display: flex;
 }
 
-header{
-    margin: 0 auto;
-    align-items: center;
-    background-color: hsl(0, 100%, 40%);
-    height:10%;
-    display: flex;
-    width: 100vw;
+.top-bar-sort ul{
+  display: flex;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+}
 
+.top-bar-sort ul li:not(:last-child)::after{
+  color: rgba(0, 0, 0, 0.459);
+  content:"|";
+  margin-left: 0.3rem;
 }
 
 .menu{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
-    padding: 16%;
-    height: auto;
-
-    
+  background-color: hsl(0, 100%, 40%);
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 10%;
+  width: 80%;
+  align-items: center;
+  height: auto;
 }
-.menu-hamburger{
-    display: flex;
-    justify-content: start;
-    width: 15%;
-    
-
-}
-
-.menu-hamburger button{
-    width: 1rem;
-}
-
 
 .menu-hamburger button svg{
     fill: white;
@@ -146,22 +120,24 @@ header{
 }
 
 .menu-login span{
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .menu-signup{
-   display: flex;
-   align-items: center;
-   background-color: yellow;
-   padding: 0.6rem;
-   border-radius: 5px;
-   width:30%;
-   justify-content: center;
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+  padding: 0.6rem;
+  border-radius: 5px;
+  width:30%;
+  justify-content: center;
    
   
 }
 
 .navigator{
+  display: flex;
+  background-color: hsl(0, 0%, 90%);
 
 }
 
