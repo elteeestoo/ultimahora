@@ -24,7 +24,6 @@ ul{
 }
 
 header{
-  margin: 0 auto;
   width: 100%;
 }
 
@@ -150,12 +149,22 @@ header{
   display: flex;
   background-color: hsl(0, 0%, 90%);
   width: 60%;
-  padding: 0.5rem 20%;
+  padding: 0.2rem 20%;
+  
 }
 
 .navigator-home{
-  width: 2rem;
+  margin-right: 1rem;
+}
+
+.navigator-home button svg{
+  width: 1.5rem;
+}
+
+.navigator-home button svg path{
   fill: black;
+  
+
 }
 
 .navigator-link{
@@ -165,13 +174,19 @@ header{
 }
 .navigator-link h3{
   color: black;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .navigator-search{
-
+  margin-left: 1rem;
 }
 
+.navigator-search button svg{
+  width: 1rem;
+}
 
+.navigator-search button svg path{
+  fill: black;
+}
 body{
     margin: 0;
     min-height: 100vh;
